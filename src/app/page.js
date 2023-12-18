@@ -53,14 +53,17 @@ export default function Home() {
   }
 
   return (
-    <main className=" min-h-screen  items-center  p-4 md:p-24 max-sm:m-12">
-      <div className="flex flex-row justify-between">
-      <div className="mb-10 font-serif text-3xl font-semibold ">
+    <main className=" min-h-screen  items-center  p-4 md:p-24 max-sm:m-12 ">
+      <div className="flex flex-col md:flex-row justify-between ">
+      <div className="rounded-md shadow-md border p-6">
+      <div className=" font-serif text-3xl font-semibold   p-4  ">
         <span className="block">Upload your image,</span>
         <span className="block">video or any file</span>
         <span className="block">to get a generated url</span>
       </div>
+      </div>
       <div className="w-full max-w-md bg-white p-8 rounded-md shadow-md">
+        <div className="p-6">
         <label htmlFor="img" className="block text-lg font-semibold mb-4">
           Upload here:
         </label>
@@ -71,8 +74,7 @@ export default function Home() {
           id="img"
           className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-300"
         />
-
-        
+        </div>
       </div>
       </div>
       <div className="items-center mt-10">
